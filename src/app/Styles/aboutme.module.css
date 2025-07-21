@@ -1,0 +1,107 @@
+.aboutmeMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 99vw;
+    padding: 1vh 0.5vw;
+    padding-top: 4vh;
+}
+
+.aboutmeContainer{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.textAboutMeContainer{
+    width: 50%;
+    background-color: #213a2755;
+    font-weight: 100;
+    color: white;
+    min-height: 20vw;
+    padding: 2vw;
+    border-radius: 10px;
+    box-shadow: 0px 7px 40px 3px rgba(0, 0, 0, 0.14);
+}
+
+.textAboutMeContainer h2{
+    font-size: 3vh;
+  transition: all 0.3s ease-in-out;
+}
+
+.textAboutMeContainer h2:hover{
+    letter-spacing: 0.2vw;
+}
+
+.textAboutMeContainer span{
+    font-size: 3.5vh;
+    color: #91c29c;
+    font-weight: 900;
+}
+
+
+.photoPolaroid {
+  width: 20vw;
+  transform: rotate(-2deg);
+  box-shadow: 0 1vh 5vh rgba(255, 255, 255, 0.25);
+  border: 0.75vw solid white;
+  border-bottom: 3vw solid white;
+  border-radius: 5px;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  filter: sepia(0.45) contrast(1.1) brightness(0.85) saturate(1.12);
+}
+
+.photoPolaroid:hover{
+    transform: rotate(3deg);
+    filter: none;
+}
+
+.educationSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.navigationButtons{
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1vw;
+}
+
+.list{
+    margin:1vh 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.activeEduCard{
+    margin: 1vh 0;
+    width: 45vw;
+    background-color: #213a2755;
+    color: white;
+    padding: 2vw;
+    border-radius: 10px;
+    box-shadow: 0px 7px 40px 3px rgba(0, 0, 0, 0.14);
+    transition: all 0.3s ease-in-out;
+}
+
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
