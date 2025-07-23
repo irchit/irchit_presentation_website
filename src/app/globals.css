@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: var(--font-Exo-2-sans), sans-serif;
   background: #2c3829;

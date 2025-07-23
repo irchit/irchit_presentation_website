@@ -86,8 +86,14 @@ export default function Header() {
             <img src="./munte_cut.png" className={styles.mountainCut} 
                 style={{
                     bottom: 0,
-                    left: "10vw",
+                    left: "16vw",
                     transform: "scaleX(-1)"
+                }}
+            />
+            <img src="./munte_cut.png" className={styles.mountainCut} 
+                style={{
+                    bottom: 0,
+                    left: "20vw"
                 }}
             />
             <img src="./munte_cut.png" className={styles.mountainCut} 
@@ -107,6 +113,13 @@ export default function Header() {
                 style={{
                     bottom: 0,
                     right: "11vw",
+                    transform: "scaleX(-1)"
+                }}
+            />
+            <img src="./munte_cut.png" className={styles.mountainCut} 
+                style={{
+                    bottom: 0,
+                    right: "17vw",
                     transform: "scaleX(-1)"
                 }}
             />

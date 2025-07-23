@@ -1,0 +1,75 @@
+.emailContainer{
+    margin: 2vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    padding: 2em;
+    background-color: #f9f9f999;
+    box-shadow: 0 1vh 5vh rgba(255, 255, 255, 0.25);
+    border: 0.75vw solid white;
+    border-radius: 5px;
+    gap: 1vh;
+    transform: rotate(2deg);
+    transition: all 0.3s ease-in;
+}
+
+.emailContainer:focus-within{
+    transform: rotate(0deg);
+    box-shadow: 0 2vh 6vh rgba(144, 174, 136, 0.55);
+}
+
+.emailContainer:hover{
+    transform: rotate(0deg);
+    box-shadow: 0 2vh 6vh rgba(144, 174, 136, 0.55);
+}
+
+.emailContainer img{
+    width: 3vw;
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    filter: drop-shadow(5px 0.75vh 1.5vh rgba(0, 0, 0, 0.25));
+    transform: rotate(-7deg);
+}
+
+.contactContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 7vw;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+    padding: 2em;
+}
+
+.contactText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 20vw;
+    padding: 2em;
+    background-color: #213a2755;
+    border-radius: 10px;
+    box-shadow: 0px 7px 40px 3px rgba(0, 0, 0, 0.14);
+    color: white;
+}
+
+.contactInfo h1{
+    align-self: flex-start;
+    color: white;
+}
+
+.contactInfo a{
+    color: #a9d191;
+    text-decoration: none;
+    
+}
