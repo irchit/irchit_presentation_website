@@ -69,7 +69,10 @@
 }
 
 .contactInfo a{
-    color: #a9d191;
+    color: #d7bee5;
     text-decoration: none;
-    
+    transition: all 0.3 ease-in;
+}
+.contactInfo a:hover{
+    color: #9759bd9e;
 }

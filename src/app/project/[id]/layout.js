@@ -1,5 +1,8 @@
 import { Geist, Geist_Mono, Exo_2 } from "next/font/google";
-import "./globals.css";
+import "../../globals.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 
 const exo2 = Exo_2({
@@ -15,10 +18,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html>
-      <body className={`${exo2.variable}`}>
-        {children}
-      </body>
-    </html>
+    <>
+      {children}
+    </>
   );
 }

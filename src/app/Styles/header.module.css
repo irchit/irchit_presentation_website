@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    border-bottom: 8px solid white;
 }
 
 .title{
@@ -47,7 +48,8 @@
 }
 
 .nav a:hover{
-    color: #b1dbbb;
+    color: #d7bee5;
+    text-decoration: underline;
 }
 
 .logo{
@@ -86,7 +88,7 @@
 }
 
 .langSelector:hover{
-    color: #b1dbbb;
+    color: #d7bee5;
 }
 
 .langSelector option{

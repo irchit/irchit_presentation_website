@@ -4,6 +4,11 @@ import { useRouter, useSearchParams} from "next/navigation";
 import styles from "@/app/Styles/header.module.css";
 
 export default function Header() {
+  const [domain, setDomain] = useState("");
+
+  useEffect(() => {
+    setDomain(window.location.origin);
+  }, []);
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -49,16 +54,16 @@ export default function Header() {
   }, [searchParams]);
 
   return (
-    <div className={styles.header}>
+    <div className={styles.header} id="header">
       <div className={styles.navContainer}>
         <div className={styles.logoContainer}>
-            <img src="./logo.png" alt="Logo" className={styles.logo} />
+            <img src="/logo.png" alt="Logo" className={styles.logo} />
         </div>
         <nav className={styles.nav}>
-          <a href="#home" className={styles.navLink}>{content.aboutme}</a>
-          <a href="#about" className={styles.navLink}>{content.cv}</a>
-          <a href="#projects" className={styles.navLink}>{content.projects}</a>
-          <a href="#contact" className={styles.navLink}>{content.contact}</a>
+          <a href={"/?lang=" + (searchParams.get("lang") || "en")} className={styles.navLink}>{content.aboutme}</a>
+          <a href={"/cv?lang=" + (searchParams.get("lang") || "en")} className={styles.navLink}>{content.cv}</a>
+          <a href={"/projects?lang=" + (searchParams.get("lang") || "en")} className={styles.navLink}>{content.projects}</a>
+          <a href={domain + "?lang=" + (searchParams.get("lang") || "en") + "/#contact"} className={styles.navLink}>{content.contact}</a>
 
           <select className={styles.langSelector} onChange={handleLanguageChange} defaultValue={searchParams.get("lang") || "en"}>
             <option value="en">English</option>
@@ -71,52 +76,52 @@ export default function Header() {
             <h1>
                 Chiţea Răzvan ~ irchit
             </h1>
-            <img src="./munte_cut.png" className={styles.mountainCut} 
+            <img src="/munte_cut.png" className={styles.mountainCut} 
                 style={{
                     bottom: 0,
                     left: "-3vw"
                 }}
             />
-            <img src="./munte_cut.png" className={styles.mountainCut} 
+            <img src="/munte_cut.png" className={styles.mountainCut} 
                 style={{
                     bottom: 0,
                     left: "5vw"
                 }}
             />
-            <img src="./munte_cut.png" className={styles.mountainCut} 
+            <img src="/munte_cut.png" className={styles.mountainCut} 
                 style={{
                     bottom: 0,
                     left: "16vw",
                     transform: "scaleX(-1)"
                 }}
             />
-            <img src="./munte_cut.png" className={styles.mountainCut} 
+            <img src="/munte_cut.png" className={styles.mountainCut} 
                 style={{
                     bottom: 0,
                     left: "20vw"
                 }}
             />
-            <img src="./munte_cut.png" className={styles.mountainCut} 
+            <img src="/munte_cut.png" className={styles.mountainCut} 
                 style={{
                     bottom: 0,
                     right: "-3vw",
                     transform: "scaleX(-1)"
                 }}
             />
-            <img src="./munte_cut.png" className={styles.mountainCut} 
+            <img src="/munte_cut.png" className={styles.mountainCut} 
                 style={{
                     bottom: 0,
                     right: "6vw",
                 }}
             />
-            <img src="./munte_cut.png" className={styles.mountainCut} 
+            <img src="/munte_cut.png" className={styles.mountainCut} 
                 style={{
                     bottom: 0,
                     right: "11vw",
                     transform: "scaleX(-1)"
                 }}
             />
-            <img src="./munte_cut.png" className={styles.mountainCut} 
+            <img src="/munte_cut.png" className={styles.mountainCut} 
                 style={{
                     bottom: 0,
                     right: "17vw",

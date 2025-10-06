@@ -9,7 +9,6 @@ html{
 
 body{
   font-family: var(--font-Exo-2-sans), sans-serif;
-  background: #2c3829;
   background: linear-gradient(141deg,rgba(44, 56, 41, 1) 0%, rgba(101, 117, 106, 1) 46%, rgba(93, 110, 93, 1) 83%);
   min-height: 100vh;
   overflow-x: hidden;

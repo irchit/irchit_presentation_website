@@ -42,6 +42,13 @@ export default function Skills() {
         "Data Structures and Algorithms",
         "Database Management for SQL and NoSQL",
         "Version Control (Git)"
+    ],
+    languages: [
+        "Language proficiency",
+        ["Language", "Level", "Diploma"],
+        ["Romanian", "Native", "Native Language"],
+        ["English", "C2", "UBB Language Diploma"],
+        ["German", "B2", "Goethe Language Diploma"]
     ]
   });
 
@@ -85,6 +92,13 @@ export default function Skills() {
             "Structuri de Date și Algoritmi",
             "Gestionarea Bazelor de Date pentru SQL și NoSQL",
             "Controlul Versiunilor (Git)"
+        ],
+        languages: [
+            "Competenţe Lingvistice",
+            ["Limbă", "Nivel", "Diplomă"],
+            ["Română", "Nativ", "Limbă Maternă"],
+            ["Engleză", "C2", "UBB, Diploma Lingvistică"],
+            ["Germană", "B2", "Goethe, Diploma Lingvistică"]
         ]
       });
     } else if (lang === "de") {
@@ -124,6 +138,13 @@ export default function Skills() {
           "Datenstrukturen und Algorithmen", 
           "Datenbankmanagement für SQL und NoSQL", 
           'Versionskontrolle (Git)'
+        ],
+        languages: [
+            "Sprachkompetenzen",
+            ["Sprache", "Niveau", "Diploma"],
+            ["Rumänisch", "Nativ","Muttersprache"],
+            ["Englisch", "C2", "UBB, Sprachdiplom"],
+            ["Deutsch", "B2", "Goethe, Sprachdiplom"]
         ]
       });
     } else {
@@ -163,6 +184,13 @@ export default function Skills() {
             "Data Structures and Algorithms",
             "Database Management for SQL and NoSQL",
             "Version Control (Git)"
+        ],
+    languages: [
+            "Language proficiency",
+            ["Language", "Level", "Diploma"],
+            ["Romanian", "Native", "Native Language"],
+            ["English", "C2", "UBB Language Diploma"],
+            ["German", "B2", "Goethe Language Diploma"]
         ]
         });
         }
@@ -183,21 +211,21 @@ export default function Skills() {
                 style={{
                     alignSelf: "flex-end",
                     color: "white",
-            fontSize: "4vh",
-            marginRight: "10vw",
+                    fontSize: "4vh",
+                    marginRight: "10vw",
                 }}
             >{content.title}</h2>
             <div style={{ 
                     alignSelf: "flex-end",
-            marginRight: "10vw",
-            display: "block",
-            height: "2px",
-            width: "40%",
-            background: "linear-gradient(to right, #91c29c80 0%, #91c29cFF 10%, #91c29c80 30%, #91c29c00 100%)",
-            borderRadius: "25%",
-            marginBottom: "2em",
-            transform: "scaleX(-1)"
-       }} />
+                    marginRight: "10vw",
+                    display: "block",
+                    height: "2px",
+                    width: "40%",
+                    background: "linear-gradient(to right, #91c29c80 0%, #91c29cFF 10%, #91c29c80 30%, #91c29c00 100%)",
+                    borderRadius: "25%",
+                    marginBottom: "2em",
+                    transform: "scaleX(-1)"
+            }} />
             <div className={styles.skillsContainer}>
                 <div className={styles.cardTraits}>
                     <h3>{
@@ -235,6 +263,71 @@ export default function Skills() {
                         <li key={idx}>{tech}</li>
                     ))}
                     </ul>
+                </div>
+            </div>
+            <div style={{
+                display: "flex",
+                flexDirection: "column",
+                width: "70%",
+                justifyContent: "center",
+                alignItems: "center"
+            }}>
+                <h5
+                    style={{
+                        fontSize: "3vh",
+                        fontWeight: "500",
+                        alignSelf: "flex-start",
+                        color: "white",
+                        marginBottom: "2vh"
+                    }}
+                >{content.languages[0]}</h5>
+                 <div style={{ 
+                    alignSelf: "flex-start",
+                    marginRight: "10vw",
+                    display: "block",
+                    height: "1px",
+                    width: "20%",
+                    background: "linear-gradient(to right, #91c29c80 0%, #91c29cFF 10%, #91c29c80 30%, #91c29c00 100%)",
+                    borderRadius: "25%",
+                    marginBottom: "2em"
+                }} />
+                <div className={styles.langTable}>
+                    <div>                        
+                        <p>{content.languages[1][0]}</p>
+                        <p>{content.languages[1][1]}</p>
+                        <p>{content.languages[1][2]}</p>
+                    </div>
+                    <div>                        
+                        <p>{content.languages[2][0]}</p>
+                        <p><em>{content.languages[2][1]}</em></p>
+                        <p>{content.languages[2][2]}</p>
+                    </div>
+                    <div 
+                        title="Open"
+                        onClick = {
+                        () => {
+                            window.open("/UBB-English.pdf")
+                        }
+                    }
+                        className={styles.langTableLink}
+                    >                        
+                        <p>{content.languages[3][0]}</p>
+                        <p><em>{content.languages[3][1]}</em></p>
+                        <p>{content.languages[3][2]}</p>
+                    </div>
+                    <div
+                        title="Open"
+                        onClick = {
+                        () => {
+                            window.open("/Goethe-Deutsch.pdf")
+                        }
+                    }
+                        className={styles.langTableLink}
+                    >                        
+                        <p>{content.languages[4][0]}</p>
+                        <p><em>{content.languages[4][1]}</em></p>
+                        <p>{content.languages[4][2]}</p>
+                    </div>
                 </div>
             </div>
         </div>

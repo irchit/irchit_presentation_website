@@ -178,16 +178,24 @@ export default function Education() {
                 <img src="./learning.png" style={{ width: "10vw", filter: "brightness(0) invert(1)", marginLeft: "2vw"}} />
                 <div className={styles.activeEduCard}>
                     <h3>{content.masters.title}</h3>
-                    <p><strong>{content.masters.institution}</strong> ({content.masters.date})</p>
-                    <p><em>{content.masters.language}</em></p>
+                    <p>
+                      <strong>{content.masters.institution}</strong> (
+                      <span style={{ color: "#d7bee5" }}>{content.masters.date}</span>
+                      )
+                    </p>
+                    <p><em style={{ color: "#d7bee5" }}>{content.masters.language}</em></p>
                     <p>{content.masters.description}</p>
                 </div>
             </div>
             <div className={styles.card}>
                 <div className={styles.activeEduCard}>
                     <h3>{content.bachelor.title}</h3>
-                    <p><strong>{content.bachelor.institution}</strong> ({content.bachelor.date})</p>
-                    <p><em>{content.bachelor.language}</em></p>
+                    <p>
+                      <strong>{content.bachelor.institution}</strong> (
+                      <span style={{ color: "#d7bee5" }}>{content.bachelor.date}</span>
+                      )
+                    </p>
+                    <p><em style={{ color: "#d7bee5" }}>{content.bachelor.language}</em></p>
                     <p>{content.bachelor.description}</p>
                 </div>
                 <img src="./diploma.png" style={{ width: "10vw", filter: "brightness(0) invert(1)", marginRight: "2vw"}} />
@@ -197,16 +205,24 @@ export default function Education() {
                 <img src="./study.png" style={{ width: "10vw", filter: "brightness(0) invert(1)", marginLeft: "2vw"}} />
                 <div className={styles.activeEduCard}>
                     <h3>{content.highSchool.title}</h3>
-                    <p><strong>{content.highSchool.institution}</strong> ({content.highSchool.date})</p>
-                    <p><em>{content.highSchool.language}</em></p>
+                    <p>
+                      <strong>{content.highSchool.institution}</strong> (
+                      <span style={{ color: "#d7bee5" }}>{content.highSchool.date}</span>
+                      )
+                    </p>
+                    <p><em style={{ color: "#d7bee5" }}>{content.highSchool.language}</em></p>
                     <p>{content.highSchool.description}</p>
                 </div>
             </div>
             <div className={styles.card}>
                 <div className={styles.activeEduCard}>
                     <h3>{content.artsSchool.title}</h3>
-                    <p><strong>{content.artsSchool.institution}</strong> ({content.artsSchool.date})</p>
-                    <p><em>{content.artsSchool.language}</em></p>
+                    <p>
+                      <strong>{content.artsSchool.institution}</strong> (
+                      <span style={{ color: "#d7bee5" }}>{content.artsSchool.date}</span>
+                      )
+                    </p>
+                    <p><em style={{ color: "#d7bee5" }}>{content.artsSchool.language}</em></p>
                     <p>{content.artsSchool.description}</p>
                 </div>
                 <img src="./theater.png" style={{ width: "10vw", filter: "brightness(0) invert(1)", marginRight: "2vw"}} />
