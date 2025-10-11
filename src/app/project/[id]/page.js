@@ -72,8 +72,8 @@ export default function Home(){
         images: {
             logo: "/projects/PoemSociety/poemSocietyLogo.png",
             views: [
-            "/projects/PoemSociety/HomeMenuFeed.jpg",
-            "/projects/PoemSociety/userPage.jpg"
+            "/projects/PoemSociety/HomeMenuFeed.png",
+            "/projects/PoemSociety/userPage.png"
             ]
         },
         purpose: {
