@@ -1,8 +1,7 @@
 "use client"
-import PdfViewer from "../Components/CV";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, Suspense} from "react";
 import { useRouter, useSearchParams} from "next/navigation";
 import styles from "@/app/Styles/projects.module.css";
 import ProjectPolaroid from "../Components/ProjectPolaroid";
@@ -338,7 +337,7 @@ export default function Home() {
     }, [searchParams]);
 
     return (
-        <div>
+        <Suspense fallback={<div>Loading...</div>}>
             <Header />
             <div className={styles.projectFeed}>
                 <div className={styles.projectsFeedHeader}>
@@ -379,6 +378,6 @@ export default function Home() {
                 </div>
             </div>
             <Footer />
-        </div>
+        </Suspense>
     )
 }
