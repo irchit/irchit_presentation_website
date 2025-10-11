@@ -2,7 +2,7 @@
 import PdfViewer from "../Components/CV";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, Suspense} from "react";
 import { useRouter, useSearchParams} from "next/navigation";
 
 export default function Home() {
@@ -50,7 +50,7 @@ export default function Home() {
     };
 
     return (
-        <div>
+        <Suspense fallback={<div>Loading...</div>}>
             <Header />
             <div
                 style={{
@@ -70,6 +70,6 @@ export default function Home() {
 
             <PdfViewer file={"CV.pdf"} />
             <Footer />
-        </div>
+        </Suspense>
     )
 }

@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "./Components/Header";
@@ -13,14 +13,16 @@ import Footer from "./Components/Footer";
 export default function Home() {
 
   return (
-    <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center",}}>
-      <Header />
-      <AboutMe />
-      <FeaturedProjects />
-      <Skills />
-      <Education />
-      <Contact />
-      <Footer />
-    </div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center",}}>
+        <Header />
+        <AboutMe />
+        <FeaturedProjects />
+        <Skills />
+        <Education />
+        <Contact />
+        <Footer />
+      </div>
+    </Suspense>
   );
 }

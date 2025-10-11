@@ -2,6 +2,7 @@ import Footer from "@/app/Components/Footer";
 import Header from "../../Components/Header";
 import styles from "@/app/Styles/projects.module.css";
 import ProjectExtended from "@/app/Components/ProjectExtended";
+import { Suspense } from "react";
 
 export default function Home(){
 
@@ -81,11 +82,11 @@ export default function Home(){
         };
 
     return (
-        <div>
+        <Suspense fallback={<div>Loading...</div>}>
             <Header />
             <ProjectExtended data={project} />
             <Footer />
-        </div>
+        </Suspense>
     )
 
 }
