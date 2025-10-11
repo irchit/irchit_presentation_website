@@ -70,10 +70,10 @@ export default function Home(){
         youtube: "https://youtu.be/YuCZJKPJakM",
         application: "",
         images: {
-            logo: "/projects/PoemSociety/poemSocietyLogo.png",
+            logo: "/Projects/PoemSociety/poemSocietyLogo.png",
             views: [
-            "/projects/PoemSociety/homePage.jpg",
-            "/projects/PoemSociety/profilePage.jpg"
+            "/Projects/PoemSociety/homePage.jpg",
+            "/Projects/PoemSociety/profilePage.jpg"
             ]
         },
         purpose: {
