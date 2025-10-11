@@ -5,6 +5,8 @@ import Header from "../Components/Header";
 import React, {useState, useEffect, Suspense} from "react";
 import { useRouter, useSearchParams} from "next/navigation";
 
+export const runtime = "edge";
+
 export default function Home() {
 
     const searchParams = useSearchParams();

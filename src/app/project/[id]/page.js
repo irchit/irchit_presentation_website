@@ -4,6 +4,8 @@ import styles from "@/app/Styles/projects.module.css";
 import ProjectExtended from "@/app/Components/ProjectExtended";
 import { Suspense } from "react";
 
+export const runtime = "edge";
+
 export default function Home(){
 
     const project = {
