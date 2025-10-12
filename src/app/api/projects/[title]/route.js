@@ -8,7 +8,7 @@ export async function GET(req, { params }) {
     const db = client.db("irchitCV");
 
     // Extract title from the URL
-    const { title } = params;
+    const { title } = await params;
 
     const project = await db
       .collection("projects")
