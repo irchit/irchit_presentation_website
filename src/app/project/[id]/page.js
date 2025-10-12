@@ -9,7 +9,6 @@ import ProjectExtended from "@/app/Components/ProjectExtended";
 export const runtime = "nodejs";
 
 export default function ProjectPage({ params }) {
-  // ✅ Unwrap params Promise using React.use()
   const { id } = use(params);
 
   const [project, setProject] = useState(null);

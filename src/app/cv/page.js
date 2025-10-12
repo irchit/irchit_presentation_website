@@ -1,5 +1,5 @@
 
-import React, {useState, useEffect, Suspense} from "react";
+import React, {Suspense} from "react";
 import CVContent from "../Components/CVContent";
 
 export const runtime = "nodejs";
