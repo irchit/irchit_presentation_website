@@ -6,6 +6,15 @@ import ImageGridElement from "./ImageGridElement";
 import BookmarksProject from "./BookmarksProject";
 
 export default function ProjectExtended({ data }) {
+    const [isMobile, setIsMobile] = useState(false);
+    
+      useEffect(() => {
+        // Funcție care actualizează starea în funcție de lățimea ecranului
+        const handleResize = () => setIsMobile(window.innerWidth < 768);
+        handleResize(); // apel inițial
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+      }, []);
 
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || "en";
@@ -98,7 +107,8 @@ useEffect(() => {
 
 return (
     <div className={styles.projectExtended}>
-        <BookmarksProject />
+        {isMobile ? null : 
+        <BookmarksProject />}
         <div className={styles.contentHeader} id="title">
                 <div className={styles.imgContainerLogo}>
                     <img src={data.images.logo} alt={`${data.title} Logo`} />

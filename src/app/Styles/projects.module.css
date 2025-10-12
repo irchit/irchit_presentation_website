@@ -68,7 +68,7 @@
     margin: 2vh 0;
     display: grid;
     width: 90%;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
 }
@@ -109,6 +109,7 @@
 
 .imgContainerLogo img{
     height: 30vh;
+    background-color: #ffe4b5d1;
 }
 
 .contentTitle{
@@ -328,5 +329,48 @@
 
   .projectPolaroidLogo{
     width: 40%;
+  }
+
+  .contentHeader{
+      flex-direction: column;
+      gap: 5vh;
+  }
+
+  .contentPurpose{
+      flex-direction: column-reverse;
+      gap: 3vh;
+      width: 90%;
+  }
+
+  .contentPurpose img{
+      height: 25vw;
+  }
+
+  .technologiesConcepts{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .technologiesConcepts img{
+    align-self: center;
+    height: 20vh;
+    width: auto;
+    margin: 0;
+  }
+
+  .technologiesConcepts div{
+      width: 80%;
+      padding: 2vh 2vw;
+  }
+
+  .gallery{
+      grid-template-columns: 1fr;
+      width: 100%;
+      gap: 5vh;
+  }
+
+  .galleryItem img{
+      width: 80vw;
   }
 }
