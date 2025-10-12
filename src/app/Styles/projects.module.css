@@ -1,6 +1,6 @@
 .projectPolaroid{
     cursor: pointer;
-    width: 26vw;
+    width: 33%;
     box-shadow: 0 1vh 5vh rgba(255, 255, 255, 0.25);
     border: 0.75vw solid white;
     border-top: 1.25vw solid white;
@@ -27,7 +27,6 @@
     background-color: rgba(191, 239, 199, 0.82);
     overflow-y: auto;
     padding: 1em 2vw;
-    width: 22vw;
 }
 
 .projectPolaroidContent p{
@@ -54,6 +53,7 @@
 .featuredProjectsContainer{
     margin-top: 2vh;
     color: white;
+    width: 90%;
 }
 
 .projectExtended{
@@ -288,6 +288,16 @@
   justify-items: center;
 }
 
+.listFeaturedProjects {
+  display: flex;
+  gap: 2vh;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+
 @media (max-width: 1200px) {
   .gridProjects {
     grid-template-columns: repeat(2, 1fr);
@@ -297,5 +307,23 @@
 @media (max-width: 768px) {
   .gridProjects {
     grid-template-columns: 1fr;
+  }
+
+  .listFeaturedProjects{
+      flex-direction: column;
+      gap: 5vh;
+      width: 100%;
+  }
+
+  .projectPolaroid{
+      width: 90%;
+  }
+
+  .projectPolaroidContent{
+    gap: 3vh;
+  }
+
+  .projectPolaroidLogo{
+    width: 40%;
   }
 }

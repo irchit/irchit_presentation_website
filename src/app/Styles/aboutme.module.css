@@ -172,3 +172,21 @@
     background-color:#cbffd7CC;
     font-weight: 500;
 }
+
+@media (max-width: 768px) {
+    .aboutmeContainer{
+        flex-direction: column-reverse;
+    }
+
+    .textAboutMeContainer{
+        width: 90%;
+        margin-top: 3vh;
+    }
+
+    .photoPolaroid{
+        width: 50vw;
+        border: 1.25vh solid white;
+        border-top: 2vh solid white;
+        border-bottom: 6.5vh solid white;
+    }
+}

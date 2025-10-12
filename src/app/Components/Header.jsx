@@ -5,6 +5,15 @@ import styles from "@/app/Styles/header.module.css";
 
 export default function Header() {
   const [domain, setDomain] = useState("");
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Funcție care actualizează starea în funcție de lățimea ecranului
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize(); // apel inițial
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     setDomain(window.location.origin);
@@ -59,6 +68,9 @@ export default function Header() {
         <div className={styles.logoContainer}>
             <img src="/logo.png" alt="Logo" className={styles.logo} />
         </div>
+        {isMobile ? (
+          <button className={styles.menuButton}>☰</button> // exemplu pentru mobil
+        ) : (
         <nav className={styles.nav}>
           <a href={"/?lang=" + (searchParams.get("lang") || "en")} className={styles.navLink}>{content.aboutme}</a>
           <a href={"/cv?lang=" + (searchParams.get("lang") || "en")} className={styles.navLink}>{content.cv}</a>
@@ -70,7 +82,7 @@ export default function Header() {
             <option value="ro">Română</option>
             <option value="de">Deutsch</option>
           </select>
-        </nav>
+        </nav>)}
         </div>
         <div className={styles.title}>
             <h1>

@@ -48,22 +48,22 @@ export default function AboutMe() {
                         </h2>
                     } 
                     {content.description.split("\n").map((line, index) => (
-  <p key={index} style={{margin: "0.75em 0.75em" }}>
-    {line.split("\t").map((tab, tabIndex) => (
-      <span
-        key={tabIndex}
-        style={{
-            fontWeight: "300",
-             fontSize: "2vh",
-            display: "inline-block",
-            color: "white"
-            }}
-      >
-        {tab}
-      </span>
-    ))}
-  </p>
-))}
+                    <p key={index} style={{margin: "0.75em 0.75em" }}>
+                        {line.split("\t").map((tab, tabIndex) => (
+                        <span
+                            key={tabIndex}
+                            style={{
+                                fontWeight: "300",
+                                fontSize: "2vh",
+                                display: "inline-block",
+                                color: "white"
+                                }}
+                        >
+                            {tab}
+                        </span>
+                        ))}
+                    </p>
+                    ))}
                 </div>
                 <img src="./me_fac.jpg" className={styles.photoPolaroid} />
             </div>

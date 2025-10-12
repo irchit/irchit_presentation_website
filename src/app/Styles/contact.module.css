@@ -76,3 +76,23 @@
 .contactInfo a:hover{
     color: #9759bd9e;
 }
+
+@media (max-width:768px){
+    .contactContainer{
+        flex-direction: column;
+        gap: 3vh;
+    }
+
+    .emailContainer{
+        width: 70vw;
+    }
+
+    .contactInfo{
+        width: 70vw;
+    }
+
+    .contactText{
+        width: 90%;
+        padding: 1em;
+    }
+}

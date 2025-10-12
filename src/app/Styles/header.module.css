@@ -6,6 +6,7 @@
     align-items: center;
     width: 100%;
     border-bottom: 8px solid white;
+    overflow-x: hidden;
 }
 
 .title{

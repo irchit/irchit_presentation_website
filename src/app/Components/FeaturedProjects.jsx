@@ -91,14 +91,7 @@ export default function FeaturedProjects() {
       <p>{content.text}</p>
 
       <div
-        style={{
-          display: "flex",
-          gap: "2vh",
-          justifyContent: "center",
-          flexWrap: "wrap",
-          alignContent: "center",
-          alignItems: "center",
-        }}
+        className={styles.listFeaturedProjects}
       >
         {projects.length === 0 ? (
           <p>Loading projects...</p>

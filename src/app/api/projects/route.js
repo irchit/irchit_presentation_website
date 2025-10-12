@@ -6,7 +6,12 @@ export async function GET() {
   try {
     const client = await clientPromise;
     const db = client.db("irchitCV");
-    const projects = await db.collection("projects").find({}).toArray();
+    const projects = (
+      await db
+      .collection("projects")
+      .find({})
+      .toArray()
+    ).sort((a, b) => new Date(b.en?.date || "1900-01-01") - new Date(a.en?.date || "1900-01-01"));
 
     // 🎨 Pastel color palette
     const colors = [
