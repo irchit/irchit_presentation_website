@@ -2,11 +2,17 @@
 import { useState, useEffect } from "react";
 import styles from "@/app/Styles/projects.module.css"
 
-export default function ImageGridElement({img, fileName, idx, fileDir}) {
+export default function ImageGridElement({isMobile, img, fileName, idx, fileDir}) {
     const [rotation, setRotation] = useState(0);
 
   useEffect(() => {
-    setRotation((Math.floor(Math.random() * 4) + 1) * (idx % 2 == 0 ? -1 : 1));
+    if (isMobile) {
+        setRotation((Math.floor(Math.random() * 4) + 1) * (idx % 2 == 0 ? -1 : 1));
+        return;
+    }
+    setRotation((Math.floor(Math.random() * 4) + 1) * (idx % 4 == 0 ? -1 : (
+      idx %4 == 1 ? 1 : (idx %4 == 2 ? 1 : -1)
+    )));
   }, []);
 
   return (

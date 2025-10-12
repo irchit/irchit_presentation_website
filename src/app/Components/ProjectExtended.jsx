@@ -184,7 +184,7 @@ return (
                 const fileName = parts[parts.length - 1];
                 const fileDir = parts.slice(0, parts.length - 1).join('/');
                 return (
-                    <ImageGridElement key={idx} idx={idx} img={img} fileName={fileName} fileDir={fileDir} />
+                    <ImageGridElement isMobile={isMobile} key={idx} idx={idx} img={img} fileName={fileName} fileDir={fileDir} />
                 );
             })}
         </div>

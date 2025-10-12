@@ -69,6 +69,7 @@
     display: grid;
     width: 90%;
     grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
     justify-items: center;
     align-items: center;
 }
@@ -372,5 +373,15 @@
 
   .galleryItem img{
       width: 80vw;
+  }
+
+  .contnentDescription{
+        width: 95%;
+  }
+
+  .longDescription{
+    width: 90%;
+    margin: 0;
+    margin-top: 2vh !important;
   }
 }
