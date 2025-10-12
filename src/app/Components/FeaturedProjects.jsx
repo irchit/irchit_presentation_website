@@ -97,6 +97,7 @@ export default function FeaturedProjects() {
           justifyContent: "center",
           flexWrap: "wrap",
           alignContent: "center",
+          alignItems: "center",
         }}
       >
         {projects.length === 0 ? (

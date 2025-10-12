@@ -100,23 +100,7 @@ export default function ProjectsGrid() {
               }}
             />
           </div>
-          <div className={styles.projectsFeedSearch}>
-            Search:
-            <input
-              type="text"
-              placeholder={content.search_placeholder}
-              onChange={handleSearchChange}
-            />
-            &nbsp; &nbsp; Filter:
-            <select onChange={handleTypeChange}>
-              <option value="all">{content.all}</option>
-              <option value="web">Web App</option>
-              <option value="mobile">Mobile App</option>
-              <option value="desktop">Desktop App</option>
-              <option value="game">Game</option>
-              <option value="other">{content.other}</option>
-            </select>
-          </div>
+          {/* Search and Filter */}
         </div>
 
         <div className={styles.gridProjects}>
