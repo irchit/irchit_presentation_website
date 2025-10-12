@@ -35,7 +35,7 @@
     align-items: center;
 }
 
-.nav a{
+.navLink{
     align-self: flex-start;
     display: flex;
     justify-content: center;
@@ -48,7 +48,7 @@
     transition: all 0.3s ease-in;
 }
 
-.nav a:hover{
+.navLink:hover{
     color: #d7bee5;
     text-decoration: underline;
 }
@@ -95,4 +95,41 @@
 .langSelector option{
     background-color: #213a2778;
     color: white;
+}
+
+.phoneNav{
+    position: fixed;
+    top: 0vh;
+    left: 100vw;
+    transition: all 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    background-color: #324034;
+    height: 100%;
+    width: 100%;
+    z-index: 15;
+}
+
+.menuButton{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 3vh;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.menuButton:hover{
+    color: #d7bee5;
+}
+
+@media (max-width: 768px) {
+
+    .navLink{ 
+        align-self: center;
+    }
+    
 }

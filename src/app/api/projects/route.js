@@ -36,7 +36,7 @@ export async function GET() {
       return {
         en: {
           title: proj.title || "Untitled",
-          description: proj.shortDescription?.en || "",
+          description: (proj.shortDescription?.en || "").replace(/~/g, "\n"),
           date: proj.date ? new Date(proj.date).getFullYear() : "2025",
           logo: proj.images?.logo || "",
           link,
@@ -44,16 +44,16 @@ export async function GET() {
         },
         ro: {
           title: proj.title || "Titlu necunoscut",
-          description: proj.shortDescription?.ro || "",
-          date: proj.date || "",
+          description: (proj.shortDescription?.ro || "").replace(/~/g, "\n"),
+          date: proj.date ? new Date(proj.date).getFullYear() : "2025",
           logo: proj.images?.logo || "",
           link,
           color,
         },
         de: {
           title: proj.title || "Unbekannter Titel",
-          description: proj.shortDescription?.de || "",
-          date: proj.date || "",
+          description: (proj.shortDescription?.de || "").replace(/~/g, "\n"),
+          date: proj.date ? new Date(proj.date).getFullYear() : "2025",
           logo: proj.images?.logo || "",
           link,
           color,

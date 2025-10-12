@@ -2,6 +2,7 @@
 import React, {useState, useEffect} from "react";
 import { useRouter, useSearchParams} from "next/navigation";
 import styles from "@/app/Styles/header.module.css";
+import PhoneNavi from "./PhoneNavi";
 
 export default function Header() {
   const [domain, setDomain] = useState("");
@@ -72,7 +73,19 @@ export default function Header() {
             />
         </div>
         {isMobile ? (
-          <button className={styles.menuButton}>☰</button> // exemplu pentru mobil
+          <>
+            <PhoneNavi />
+            <button className={styles.menuButton}
+
+              onClick={() => {
+                const nav = document.getElementById("phoneNav");
+                if (nav) {
+                  nav.style.left = "0";
+                }
+              }}
+
+            >☰</button>
+          </>
         ) : (
         <nav className={styles.nav}>
           <a href={"/?lang=" + (searchParams.get("lang") || "en")} className={styles.navLink}>{content.aboutme}</a>
