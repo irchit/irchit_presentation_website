@@ -83,6 +83,12 @@ export default function RootLayout({ children }) {
         <meta name="geo.position" content="46.7712;23.6236" />
         <meta name="ICBM" content="46.7712;23.6236" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://www.irchit.cv" />
+        <link rel="alternate" href="https://www.irchit.cv?lang=en" hreflang="en" />
+        <link rel="alternate" href="https://www.irchit.cv?lang=ro" hreflang="ro" />
+        <link rel="alternate" href="https://www.irchit.cv?lang=de" hreflang="de" />
+        <link rel="alternate" href="https://www.irchit.cv" hreflang="x-default" />
+
       </head>
       <body className={`${exo2.variable}`}>
         {children}
