@@ -95,4 +95,9 @@
         width: 90%;
         padding: 1em;
     }
+    .emailContainer img{
+        width: 10vw;
+        top: 2vw;
+        left: 2vw;
+    }
 }

@@ -316,7 +316,10 @@
   }
 
   .projectPolaroid{
-      width: 90%;
+      width: 95%;
+        border: 1.25vh solid white;
+        border-top: 2vh solid white;
+        border-bottom: 2vh solid white;
   }
 
   .projectPolaroidContent{

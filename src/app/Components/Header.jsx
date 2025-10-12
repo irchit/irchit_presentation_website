@@ -66,7 +66,10 @@ export default function Header() {
     <div className={styles.header} id="header">
       <div className={styles.navContainer}>
         <div className={styles.logoContainer}>
-            <img src="/logo.png" alt="Logo" className={styles.logo} />
+            <img src="/logo.png" alt="Logo" className={styles.logo} onClick={() => {
+              router.push("/?lang=" + (searchParams.get("lang") || "en"));
+            }}
+            />
         </div>
         {isMobile ? (
           <button className={styles.menuButton}>☰</button> // exemplu pentru mobil

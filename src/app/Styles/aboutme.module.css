@@ -173,6 +173,62 @@
     font-weight: 500;
 }
 
+.skillsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2em 0;
+}
+
+.skillsTitle {
+  align-self: flex-end;
+  color: white;
+  font-size: 4vh;
+  margin-right: 10vw;
+}
+
+.skillsSeparator {
+  align-self: flex-end;
+  margin-right: 10vw;
+  display: block;
+  height: 2px;
+  width: 40%;
+  background: linear-gradient(to right, #91c29c80 0%, #91c29cff 10%, #91c29c80 30%, #91c29c00 100%);
+  border-radius: 25%;
+  margin-bottom: 2em;
+  transform: scaleX(-1);
+}
+
+.skillsLangSection {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillsLangTitle {
+  font-size: 3vh;
+  font-weight: 500;
+  align-self: flex-start;
+  color: white;
+  margin-bottom: 2vh;
+}
+
+.skillsLangSeparator {
+  align-self: flex-start;
+  margin-right: 10vw;
+  display: block;
+  height: 1px;
+  width: 20%;
+  background: linear-gradient(to right, #91c29c80 0%, #91c29cff 10%, #91c29c80 30%, #91c29c00 100%);
+  border-radius: 25%;
+  margin-bottom: 2em;
+}
+
+
 @media (max-width: 768px) {
     .aboutmeContainer{
         flex-direction: column-reverse;
@@ -188,5 +244,35 @@
         border: 1.25vh solid white;
         border-top: 2vh solid white;
         border-bottom: 6.5vh solid white;
+    }
+
+    .card{
+        flex-direction: column;
+        gap: 2vh;
+        width: 90%;
+    }
+
+    .card:nth-child(even){
+        flex-direction: column-reverse;
+    }
+
+    .list{
+        width: 100%;
+    }
+
+    .activeEduCard{
+        width: 90%;
+    }
+
+    .skillsContainer{
+        flex-direction: column;
+        gap: 3vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cardTraits{
+        width: 80%;
+        align-items: center;
     }
 }

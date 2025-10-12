@@ -37,7 +37,7 @@ export async function GET() {
         en: {
           title: proj.title || "Untitled",
           description: proj.shortDescription?.en || "",
-          date: proj.date || "",
+          date: proj.date ? new Date(proj.date).getFullYear() : "2025",
           logo: proj.images?.logo || "",
           link,
           color,
