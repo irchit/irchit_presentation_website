@@ -41,7 +41,7 @@ export default function ProjectPolaroid({ index, contentAllLang }) {
   }, [searchParams, contentAllLang]);
 
   const handleClick = () => {
-    window.location.href = `/project/${index + 1}?lang=${lang}`;
+    window.location.href = `/project/${content.title}?lang=${lang}`;
   };
 
   return (

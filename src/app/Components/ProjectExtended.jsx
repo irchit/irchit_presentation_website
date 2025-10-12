@@ -6,6 +6,7 @@ import ImageGridElement from "./ImageGridElement";
 import BookmarksProject from "./BookmarksProject";
 
 export default function ProjectExtended({ data }) {
+
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || "en";
 const [translation, setTranslation] = useState({
