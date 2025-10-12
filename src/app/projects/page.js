@@ -7,7 +7,7 @@ import { useSearchParams } from "next/navigation";
 import styles from "@/app/Styles/projects.module.css";
 import ProjectPolaroid from "../Components/ProjectPolaroid";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 
 export default function Home() {
   const [projects, setProjects] = useState([]);

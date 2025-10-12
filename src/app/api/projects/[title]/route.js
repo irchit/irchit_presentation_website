@@ -1,6 +1,6 @@
 import clientPromise from "@/lib/mongodb";
 
-export const runtime = 'edge';
+export const runtime = "nodejs";
 
 export async function GET(req, { params }) {
   try {

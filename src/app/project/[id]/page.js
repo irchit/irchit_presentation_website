@@ -6,7 +6,7 @@ import Header from "../../Components/Header";
 import styles from "@/app/Styles/projects.module.css";
 import ProjectExtended from "@/app/Components/ProjectExtended";
 
-export const runtime = 'edge';
+export const runtime = "nodejs";
 
 export default function ProjectPage({ params }) {
   // ✅ Unwrap params Promise using React.use()

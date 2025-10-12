@@ -10,7 +10,7 @@ import Contact from "./Components/Contact";
 import FeaturedProjects from "./Components/FeaturedProjects";
 import Footer from "./Components/Footer";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 
 export default function Home() {
 
