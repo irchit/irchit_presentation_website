@@ -81,6 +81,8 @@ useEffect(() => {
     if (lang === "ro") {
       setContent({
         title: data.title,
+        date: data.date ? data.date.split("-").reverse().join("/")
+            : "",
         shortDescription: data.shortDescription.ro,
         longDescription: data.longDescription.ro,
         purpose: data.purpose.ro,
@@ -89,6 +91,8 @@ useEffect(() => {
     } else if (lang === "de") {
       setContent({
         title: data.title,
+        date: data.date? data.date.split("-").reverse().join("/")
+            : "",
         shortDescription: data.shortDescription.de,
         longDescription: data.longDescription.de,
         purpose: data.purpose.de,
@@ -97,6 +101,9 @@ useEffect(() => {
     } else {
       setContent({
         title: data.title,
+        date: data.date
+            ? data.date.split("-").reverse().join("/")
+            : "",
         shortDescription: data.shortDescription.en,
         longDescription: data.longDescription.en,
         purpose: data.purpose.en,
@@ -115,6 +122,7 @@ return (
                 </div>
                 <div className={styles.contentTitle}>
                         <h1>{content.title}</h1>
+                        <h5>{content.date}</h5>
                         <p>
                             {content.shortDescription.split("~").map((part, idx) => (
                                 <span key={idx}>
