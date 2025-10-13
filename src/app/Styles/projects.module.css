@@ -1,6 +1,6 @@
 .projectPolaroid{
     cursor: pointer;
-    width: 30vw;
+    width: 27vw;
     box-shadow: 0 1vh 5vh rgba(255, 255, 255, 0.25);
     border: 0.75vw solid white;
     border-top: 1.25vw solid white;
@@ -298,6 +298,7 @@
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
+  width: 90vw;
 }
 
 
