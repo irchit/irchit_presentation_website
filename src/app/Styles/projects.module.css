@@ -119,6 +119,7 @@
 
 .contentTitle{
     min-width: 30%;
+    max-width: 50%;
     background-color: #213a2755;
     font-weight: 300;
     color: white;
