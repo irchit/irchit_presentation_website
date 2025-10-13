@@ -51,14 +51,7 @@ export default function FeaturedProjects() {
 
         const data = await res.json();
 
-        // Sort by date descending using English date
-        const sorted = data
-          .sort(
-            (a, b) =>
-              new Date(b.en?.date || "1900-01-01") -
-              new Date(a.en?.date || "1900-01-01")
-          )
-          .slice(0, 3);
+        const sorted = data.slice(0, 3);
 
         setProjects(sorted);
       } catch (err) {

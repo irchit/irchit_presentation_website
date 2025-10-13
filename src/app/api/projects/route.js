@@ -11,7 +11,7 @@ export async function GET() {
       .collection("projects")
       .find({})
       .toArray()
-    ).sort((a, b) => new Date(b.en?.date || "1900-01-01") - new Date(a.en?.date || "1900-01-01"));
+    ).sort((a, b) => new Date(b.date || "1900-01-01") - new Date(a.date || "1900-01-01"));
 
     // 🎨 Pastel color palette
     const colors = [
