@@ -88,7 +88,8 @@ export default function RootLayout({ children }) {
         <link rel="alternate" href="https://www.irchit.cv?lang=ro" hrefLang="ro" />
         <link rel="alternate" href="https://www.irchit.cv?lang=de" hrefLang="de" />
         <link rel="alternate" href="https://www.irchit.cv" hrefLang="x-default" />
-
+        <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"></link>
       </head>
       <body className={`${exo2.variable}`}>
         {children}

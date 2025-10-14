@@ -97,6 +97,8 @@ export default function RootLayout({ children }) {
         <meta name="geo.placename" content="Cluj-Napoca, Romania" />
         <meta name="geo.position" content="46.7712;23.6236" />
         <meta name="ICBM" content="46.7712;23.6236" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"></link>
       </head>
       <body className={`${exo2.variable}`}>
         {children}
