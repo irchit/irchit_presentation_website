@@ -9,10 +9,10 @@ const exo2 = Exo_2({
 });
 
 export const metadata = {
-  title: 'irchit | Chiţea Răzvan CV',
+  title: 'irchit | Chiţea Răzvan',
   description: 'This is the online CV of Chiţea Răzvan, including his projects, skills, and contact information. Feel free to explore and get in touch!',
   openGraph: {
-    title: 'irchit | Chiţea Răzvan CV',
+    title: 'irchit | Chiţea Răzvan',
     description: 'This is the online CV of Chiţea Răzvan, including his projects, skills, and contact information. Feel free to explore and get in touch!',
     url: 'https://www.irchit.cv',
     siteName: 'irchit | Chiţea Răzvan CV',
@@ -84,10 +84,10 @@ export default function RootLayout({ children }) {
         <meta name="ICBM" content="46.7712;23.6236" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href="https://www.irchit.cv" />
-        <link rel="alternate" href="https://www.irchit.cv?lang=en" hreflang="en" />
-        <link rel="alternate" href="https://www.irchit.cv?lang=ro" hreflang="ro" />
-        <link rel="alternate" href="https://www.irchit.cv?lang=de" hreflang="de" />
-        <link rel="alternate" href="https://www.irchit.cv" hreflang="x-default" />
+        <link rel="alternate" href="https://www.irchit.cv?lang=en" hrefLang="en" />
+        <link rel="alternate" href="https://www.irchit.cv?lang=ro" hrefLang="ro" />
+        <link rel="alternate" href="https://www.irchit.cv?lang=de" hrefLang="de" />
+        <link rel="alternate" href="https://www.irchit.cv" hrefLang="x-default" />
 
       </head>
       <body className={`${exo2.variable}`}>
