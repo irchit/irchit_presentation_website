@@ -46,7 +46,7 @@ export async function generateMetadata({ params }) {
       url: `https://www.irchit.cv/project/${params?.id}`,
       siteName: `irchit | ${formatTitle(title)}`,
       images: [{
-        url: "https://www.irchit.cv/",
+        url: imageUrl,
         width: 800,
         height: 800
       }],
