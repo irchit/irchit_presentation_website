@@ -43,7 +43,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: `irchit | ${formatTitle(title)}`,
       description: `${formatTitle(title)} — detailed presentation. Check out the technologies used, concepts applied, and view the project gallery.`,
-      url: `https://www.irchit.cv/project/${params?.id}`,
+      url: `https://www.irchit.cv/project/${title}`,
       siteName: `irchit | ${formatTitle(title)}`,
       images: [{
         url: imageUrl,
