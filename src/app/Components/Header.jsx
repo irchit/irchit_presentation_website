@@ -66,12 +66,11 @@ export default function Header() {
   return (
     <div className={styles.header} id="header">
       <div className={styles.navContainer}>
+          <a href={`/?lang=` + (searchParams.get("lang") || "en")}>
         <div className={styles.logoContainer}>
-            <img src="/logo.png" alt="Logo" className={styles.logo} onClick={() => {
-              router.push("/?lang=" + (searchParams.get("lang") || "en"));
-            }}
-            />
+            <img src="/logo.png" alt="Logo" className={styles.logo} />
         </div>
+          </a>
         {isMobile ? (
           <>
             <PhoneNavi />
