@@ -1,14 +1,5 @@
 "use client";
 import { useEffect, useState, Suspense } from "react";
-import Image from "next/image";
-import styles from "./page.module.css";
-import Header from "./Components/Header";
-import AboutMe from "./Components/AboutMe";
-import Education from "./Components/Education";
-import Skills from "./Components/Skills";
-import Contact from "./Components/Contact";
-import FeaturedProjects from "./Components/FeaturedProjects";
-import Footer from "./Components/Footer";
 
 export const runtime = "nodejs";
 

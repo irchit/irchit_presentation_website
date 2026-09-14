@@ -42,6 +42,12 @@ export const metadata = {
   publisher: 'irchit',
 
   keywords: [
+    'Razvan Chitea',
+    'Razvan Chitea Brasov',
+    'Razvan Chitea Cluj',
+    'Razvan Chitea IT',
+    'Razvan Chitea Developer',
+    'Razvan Chitea Dev',
     'irchit',
     'Chiţea Răzvan',
     'Răzvan Chiţea',
