@@ -37,7 +37,7 @@ export const metadata = {
     }
   },
 
-  authors: [{ name: 'Chiţea Răzvan', url: 'https://www.irchit.cv' }],
+  authors: [{ name: 'Chitea Razvan', url: 'https://www.irchit.cv' }],
   creator: 'Chiţea Răzvan',
   publisher: 'irchit',
 

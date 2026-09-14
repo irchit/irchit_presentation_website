@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://www.irchit.cv
-
-# Sitemaps
-Sitemap: https://www.irchit.cv/sitemap.xml
